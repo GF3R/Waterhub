@@ -4,6 +4,8 @@ An Iot project to automate the watering of plants
 
 ##Components
 
+'''
+
 +-- Android Application
 |   +-- Trigger watering with the application
 |   +-- See status of plants (humidity)
@@ -14,3 +16,4 @@ An Iot project to automate the watering of plants
 +-- Server
 |   +-- Montior plants and activate watering when needed
 |   +-- Inform user when water barell is near empty
+'''
