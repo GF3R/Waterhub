@@ -1,0 +1,19 @@
+
+Ksquid:S1905"*Remove this unnecessary cast to "Toolbar".(ªü–ıÿÿÿÿ8ÖõòìÑ,
+ksquid:UselessImportCheck"CRemove this unused import 'android.support.design.widget.Snackbar'.( À®p8ÖõòìÑ,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÖõòìÑ,
+<squid:S1170"!Make this final field static too.(íöŸa8ÖõòìÑ,
+Bsquid:S1170"!Make this final field static too.(ìŠ¸èşÿÿÿÿ8ÖõòìÑ,
+Bsquid:S1170"!Make this final field static too.(À’ÂÏúÿÿÿÿ8ÖõòìÑ,
+Ssquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ÖõòìÑ,
+Bsquid:S1170"!Make this final field static too.(Õ×¥¯ûÿÿÿÿ8ÖõòìÑ,
+Ssquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ÖõòìÑ,
+=squid:S1170"!Make this final field static too.(¿Íî§8ÖõòìÑ,
+Ssquid:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ÖõòìÑ,
+Bsquid:S1170"!Make this final field static too.(ªõÍûÿÿÿÿ8ÖõòìÑ,
+xsquid:UselessImportCheck"ORemove this unused import 'android.support.design.widget.FloatingActionButton'.(„Ÿ¹¼8ÖõòìÑ,
+Ssquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ÖõòìÑ,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÖõòìÑ,
+ksquid:MaximumInheritanceDepth"=This class has 10 parents which is greater than 5 authorized.(²Ú±8ÖõòìÑ,
+`squid:S2147"DCombine this catch with the one at line 78, which has the same body.(ı¦šÖ8ÖõòìÑ,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÖõòìÑ,
