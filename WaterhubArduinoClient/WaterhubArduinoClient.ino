@@ -6,6 +6,8 @@ const char* mqtt_server = "m23.cloudmqtt.com";
 const char* username = "zzfgwuxd";
 const char* password = "eZcvJE9FEXnB";
 
+const char* topic = "Home/Waterhub/Water";
+
 int led = D7;
 
 StaticJsonBuffer<200> jsonBuffer;
@@ -78,7 +80,7 @@ void reconnect() {
  if (client.connect("ESP8266 Client", username, password)) {
   Serial.println("connected");
   // ... and subscribe to topic
-  client.subscribe("Home/Waterhub/Water");
+  client.subscribe(topic);
  } else {
   Serial.print("failed, rc=");
   Serial.print(client.state());
@@ -95,5 +97,7 @@ void loop ()
   if (!client.connected()) {
   reconnect();
  }
+ 
+ client.publish(topic, "", false);
  client.loop();
 }

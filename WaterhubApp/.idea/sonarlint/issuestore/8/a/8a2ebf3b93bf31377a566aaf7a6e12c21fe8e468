@@ -1,16 +1,0 @@
-
-qsquid:S2068"U'password' detected in this expression, review this potentially hardcoded credential.(Ñô®8¬‹öëÑ,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(º×ë¦şÿÿÿÿ8¬‹öëÑ,
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(®”´ôüÿÿÿÿ8¬‹öëÑ,
-•"squid:ClassVariableVisibilityCheck"]Make mqttAndroidClient a static final constant or non-public and provide accessors if needed.(ïùã›şÿÿÿÿ8¬‹öëÑ,
-=squid:S1170"!Make this final field static too.(¦›äã8¬‹öëÑ,
-Bsquid:S1170"!Make this final field static too.(©Íë€ûÿÿÿÿ8¬‹öëÑ,
-Bsquid:S1170"!Make this final field static too.(ãõòûÿÿÿÿ8¬‹öëÑ,
-Bsquid:S1170"!Make this final field static too.(Şñõ‘úÿÿÿÿ8¬‹öëÑ,
-=squid:S1170"!Make this final field static too.(Ñô®8¬‹öëÑ,
-¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(§áÂÕûÿÿÿÿ8¬‹öëÑ,
-¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÈÃÜëøÿÿÿÿ8¬‹öëÑ,
-†squid:UselessImportCheck"XRemove this unused import 'org.eclipse.paho.client.mqttv3.internal.wire.MqttDisconnect'.(×¬°·ûÿÿÿÿ8¬‹öëÑ,
-?squid:S1148"#Use a logger to log this exception.(Ç’Çê8¬‹öëÑ,
-?squid:S1148"#Use a logger to log this exception.(Ç’Çê8¬‹öëÑ,
