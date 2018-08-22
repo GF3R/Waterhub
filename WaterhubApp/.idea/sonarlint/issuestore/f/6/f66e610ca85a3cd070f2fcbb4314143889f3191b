@@ -1,24 +1,24 @@
 
-ssquid:UselessImportCheck"JRemove this unused import 'com.google.firebase.database.FirebaseDatabase'.(×Ë—8áŠ‹Ö,
-Ssquid:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8Üò»ˆÖ,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Üò»ˆÖ,
-`squid:S2147"DCombine this catch with the one at line 86, which has the same body.(ı¦šÖ8Üò»ˆÖ,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Üò»ˆÖ,
-ksquid:MaximumInheritanceDepth"=This class has 10 parents which is greater than 5 authorized.(²Ú±8Üò»ˆÖ,
-Ssquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8Üò»ˆÖ,
-Bsquid:S1170"!Make this final field static too.(À’ÂÏúÿÿÿÿ8Üò»ˆÖ,
-ssquid:UselessImportCheck"KRemove this unused import 'com.google.firebase.database.DatabaseReference'.(ÉÓ¹8áŠ‹Ö,
-Ksquid:S1905"*Remove this unnecessary cast to "Toolbar".(ªü–ıÿÿÿÿ8Üò»ˆÖ,
-osquid:UselessImportCheck"FRemove this unused import 'com.google.firebase.database.DataSnapshot'.(şÇŒ„8áŠ‹Ö,
-ksquid:UselessImportCheck"CRemove this unused import 'android.support.design.widget.Snackbar'.( À®p8Üò»ˆÖ,
-usquid:UselessImportCheck"GRemove this unused import 'com.google.firebase.database.DatabaseError'.(ˆÔµıÿÿÿÿ8áŠ‹Ö,
-Bsquid:S1170"!Make this final field static too.(ìŠ¸èşÿÿÿÿ8Üò»ˆÖ,
-xsquid:UselessImportCheck"ORemove this unused import 'android.support.design.widget.FloatingActionButton'.(„Ÿ¹¼8Üò»ˆÖ,
-=squid:S1170"!Make this final field static too.(¿Íî§8Üò»ˆÖ,
-zsquid:UselessImportCheck"LRemove this unused import 'com.google.firebase.database.ValueEventListener'.(‹ŞÜ‹ıÿÿÿÿ8áŠ‹Ö,
-Bsquid:S1170"!Make this final field static too.(ªõÍûÿÿÿÿ8Üò»ˆÖ,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Üò»ˆÖ,
-<squid:S1170"!Make this final field static too.(íöŸa8Üò»ˆÖ,
-Bsquid:S1170"!Make this final field static too.(Õ×¥¯ûÿÿÿÿ8Üò»ˆÖ,
-Ssquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8Üò»ˆÖ,
-Ssquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8Üò»ˆÖ,
+Ssquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8·£¯•Ö,
+osquid:UselessImportCheck"FRemove this unused import 'com.google.firebase.database.DataSnapshot'.(şÇŒ„8·£¯•Ö,
+Ssquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8·£¯•Ö,
+Ksquid:S1905"*Remove this unnecessary cast to "Toolbar".(ªü–ıÿÿÿÿ8·£¯•Ö,
+Bsquid:S1170"!Make this final field static too.(Õ×¥¯ûÿÿÿÿ8·£¯•Ö,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8·£¯•Ö,
+ssquid:UselessImportCheck"KRemove this unused import 'com.google.firebase.database.DatabaseReference'.(ÉÓ¹8·£¯•Ö,
+zsquid:UselessImportCheck"LRemove this unused import 'com.google.firebase.database.ValueEventListener'.(‹ŞÜ‹ıÿÿÿÿ8·£¯•Ö,
+=squid:S1170"!Make this final field static too.(¿Íî§8·£¯•Ö,
+Bsquid:S1170"!Make this final field static too.(À’ÂÏúÿÿÿÿ8·£¯•Ö,
+asquid:S2147"ECombine this catch with the one at line 112, which has the same body.(ı¦šÖ8·£¯•Ö,
+Bsquid:S1170"!Make this final field static too.(ìŠ¸èşÿÿÿÿ8·£¯•Ö,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8·£¯•Ö,
+Ssquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8·£¯•Ö,
+usquid:UselessImportCheck"GRemove this unused import 'com.google.firebase.database.DatabaseError'.(ˆÔµıÿÿÿÿ8·£¯•Ö,
+ksquid:MaximumInheritanceDepth"=This class has 10 parents which is greater than 5 authorized.(²Ú±8·£¯•Ö,
+ksquid:UselessImportCheck"CRemove this unused import 'android.support.design.widget.Snackbar'.( À®p8·£¯•Ö,
+xsquid:UselessImportCheck"ORemove this unused import 'android.support.design.widget.FloatingActionButton'.(„Ÿ¹¼8·£¯•Ö,
+ssquid:UselessImportCheck"JRemove this unused import 'com.google.firebase.database.FirebaseDatabase'.(×Ë—8·£¯•Ö,
+Bsquid:S1170"!Make this final field static too.(ªõÍûÿÿÿÿ8·£¯•Ö,
+Ssquid:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8·£¯•Ö,
+<squid:S1170"!Make this final field static too.(íöŸa8·£¯•Ö,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8·£¯•Ö,

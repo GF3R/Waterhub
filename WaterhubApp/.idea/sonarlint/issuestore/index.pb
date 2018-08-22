@@ -15,3 +15,7 @@ _
 /app/src/main/java/ch/gf3r/waterhubapp/Data.java,6\5\654cd4a9b49cdea44926baeedf41d27b0f2efbea
 k
 ;app/src/main/java/ch/gf3r/waterhubapp/WaterdataService.java,e\5\e5a410c98bc26a26169c4427ad5ee37c90299849
+Y
+)app/src/main/res/layout/activity_main.xml,7\6\76b07e40f24cce093536731477540f12e7da3cb6
+X
+(app/src/main/res/layout/content_main.xml,7\c\7c023c74a9bce7eb3587d0708a1c0350f6266748

@@ -64,14 +64,14 @@ public class  MainActivity extends AppCompatActivity {
         humiditydataService.GetHumidityData(new HumiditydataListener() {
             @Override
             public void recieveData(List<Data> data) {
-                Data lastData = data.get(0);
+                Data lastData = data.get(data.size() -1);
                 humidtyText.setText(" "+lastData.getAmount() + " Humidty measured at " + parseLongToDate(lastData.getDate()*1000));
             }
         });
         waterservice.GetWaterData(new WaterdataListener() {
               @Override
               public void recieveData(List<Data> data) {
-                  Data lastData = data.get(0);
+                  Data lastData = data.get(data.size() -1);
                   waterText.setText(" "+lastData.getAmount() + " Liters were added at " + parseLongToDate(lastData.getDate()*1000));
 
               }
