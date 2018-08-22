@@ -11,6 +11,13 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.TextView;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import org.eclipse.paho.android.service.MqttAndroidClient;
 import org.eclipse.paho.client.mqttv3.IMqttActionListener;
@@ -21,7 +28,12 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.MqttPersistenceException;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
-public class MainActivity extends AppCompatActivity {
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+import java.util.Locale;
+
+public class  MainActivity extends AppCompatActivity {
 
 
 
@@ -44,8 +56,28 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        final TextView waterText = findViewById(R.id.textView);
+        final TextView humidtyText = findViewById(R.id.textView2);
+        WaterdataService waterservice = new WaterdataService("Gabriel");
+        HumiditydataService humiditydataService = new HumiditydataService("Gabriel");
 
-        android.widget.Button button =  findViewById(R.id.addWaterButton);
+        humiditydataService.GetHumidityData(new HumiditydataListener() {
+            @Override
+            public void recieveData(List<Data> data) {
+                Data lastData = data.get(0);
+                humidtyText.setText(" "+lastData.getAmount() + " Humidty measured at " + parseLongToDate(lastData.getDate()*1000));
+            }
+        });
+        waterservice.GetWaterData(new WaterdataListener() {
+              @Override
+              public void recieveData(List<Data> data) {
+                  Data lastData = data.get(0);
+                  waterText.setText(" "+lastData.getAmount() + " Liters were added at " + parseLongToDate(lastData.getDate()*1000));
+
+              }
+          });
+
+            android.widget.Button button =  findViewById(R.id.addWaterButton);
         final EditText amountTextField =  findViewById(R.id.AmountWaterText);
         final Context context = this;
         button.setOnClickListener(new View.OnClickListener() {
@@ -100,6 +132,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+
     }
 
     @Override
@@ -122,5 +156,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public String parseLongToDate(long time){
+        long dv = time;// its need to be in milisecond
+        Date df = new java.util.Date(dv);
+        return new SimpleDateFormat("MM dd, yyyy hh:mma", Locale.GERMAN).format(df);
     }
 }

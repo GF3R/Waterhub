@@ -18,24 +18,17 @@ auth = app.auth() #authenticate a user
 user = auth.sign_in_with_email_and_password("Waterhub@server.com", "3e756268c6540b579bc1a3373e75f756533c3ac6")
 firebase = app.database()
 fbStorage = app.storage()
-humidityDataArray = firebase.child("users").child("Gabriel").child("humiditydata").get().val()
-waterDataArray = firebase.child("users").child("Gabriel").child("waterdata").get().val()
-print(list(humidityDataArray))
-for data in humidityDataArray:
-   print(humidityDataArray[data]["humidity"])
 
-for data in waterDataArray:
-   print(waterDataArray[data]["amount"])
+#humidityDataArray = firebase.child("users").child("Gabriel").child("humiditydata").get().val()
+#waterDataArray = firebase.child("users").child("Gabriel").child("waterdata").get().val()
 
+##printing current values for debugging
+#
+#for data in humidityDataArray:
+   #print(humidityDataArray[data]["humidity"])
 
-humidityValue = 22
-data = {"date": time.time(), "humidity": humidityValue} 
-firebase.child("users").child("Gabriel").child("humiditydata").push(data)
-waterValue = 33
-
-
-data = {"date": time.time(), "amount": waterValue} 
-firebase.child("users").child("Gabriel").child("waterdata").push(data)
+#for data in waterDataArray:
+   #print(waterDataArray[data]["amount"])
 
 def on_connect_Humid(client, userdata, flags, rc):
    print("connected with code"+str(rc))
@@ -44,7 +37,6 @@ def on_connect_Humid(client, userdata, flags, rc):
 # The callback for when the client receives a CONNACK response from the server.
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code "+str(rc))
-
     # Subscribing in on_connect() means that if we lose the connection and
     # reconnect then subscriptions will be renewed.
     client.subscribe("Home/Waterhub/#")
@@ -52,15 +44,19 @@ def on_connect(client, userdata, flags, rc):
 # The callback for when a PUBLISH message is received from the server.
 def on_water_message(client, userdata, msg):
    print("water message recieved")
-   decode = ast.literal_eval(msg.payload.decode("utf-8"))
-   if 'Wateramount' in decode:
-      print(decode['Wateramount'])
+   inputdata = ast.literal_eval(msg.payload.decode("utf-8"))
+   if 'Wateramount' in inputdata:
+      print(inputdata['Wateramount'])
+      data = {"date": time.time(), "amount": inputdata['Wateramount']} 
+      firebase.child("users").child("Gabriel").child("waterdata").push(data)
 
 def on_humid_message(client, userdate, msg):
    print("humid message recieved")
-   decode = ast.literal_eval(msg.payload.decode("utf-8"))
-   if 'Humidity' in decode:
-      print(decode['Humidity'])
+   inputdata = ast.literal_eval(msg.payload.decode("utf-8"))
+   if 'Humidity' in inputdata:
+      print(inputdata['Humidity'])
+      data = {"date": time.time(), "humidity": inputdata['Humidity']} 
+      firebase.child("users").child("Gabriel").child("humiditydata").push(data)
 
 def on_message(client, userdate, msg):
    print("unknown source")
