@@ -1,18 +1,19 @@
 
-Lsquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
-Lsquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
-Lsquid:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
-Lsquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
-5squid:S1170"!Make this final field static too.(íöŸa
-;squid:S1170"!Make this final field static too.(Õ×¥¯ûÿÿÿÿ
 6squid:S1170"!Make this final field static too.(¿Íî§
-;squid:S1170"!Make this final field static too.(ìŠ¸èşÿÿÿÿ
-;squid:S1170"!Make this final field static too.(À’ÂÏúÿÿÿÿ
-;squid:S1170"!Make this final field static too.(ªõÍûÿÿÿÿ
-Ysquid:S2147"DCombine this catch with the one at line 80, which has the same body.(ı¦šÖ
+5squid:S1170"!Make this final field static too.(íöŸa
 qsquid:UselessImportCheck"ORemove this unused import 'android.support.design.widget.FloatingActionButton'.(„Ÿ¹¼
+Lsquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
+;squid:S1170"!Make this final field static too.(À’ÂÏúÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
 dsquid:UselessImportCheck"CRemove this unused import 'android.support.design.widget.Snackbar'.( À®p
 =squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
 =squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Lsquid:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+;squid:S1170"!Make this final field static too.(ªõÍûÿÿÿÿ
+Lsquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
+Ysquid:S2147"DCombine this catch with the one at line 80, which has the same body.(ı¦šÖ
+;squid:S1170"!Make this final field static too.(Õ×¥¯ûÿÿÿÿ
+;squid:S1170"!Make this final field static too.(ìŠ¸èşÿÿÿÿ
+Lsquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
 dsquid:MaximumInheritanceDepth"=This class has 10 parents which is greater than 5 authorized.(²Ú±
+Ksquid:S1905"*Remove this unnecessary cast to "Toolbar".(ªü–ıÿÿÿÿ8šƒ–ïÕ,
