@@ -9,9 +9,9 @@ It is currently only communicating through a MQTT server which is hosted somewhe
 
 
 #### [Android Application](https://github.com/GF3R/Waterhub/tree/master/WaterhubApp)
-* [ ] Trigger watering with the application
-[ ] See status of plants (humidity)
-[ ] Monitor water status in water barrell
+- [x] Trigger watering with the application
+- [ ] See status of plants (humidity)
+- [ ] Monitor water status in water barrell
 	
 #### [Arduino Client](https://github.com/GF3R/Waterhub/tree/master/WaterhubArduinoClient)
 - [x] Activate pump by mqtt subscription
