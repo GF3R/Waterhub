@@ -6,18 +6,20 @@ const char* mqtt_server = "m23.cloudmqtt.com";
 const char* username = "zzfgwuxd";
 const char* password = "eZcvJE9FEXnB";
 
-const char* topic = "Home/Waterhub/Water";
-
+const char* topicToPublish = "Home/Waterhub/Humidity";
+const char* topicToSubscribe =  "Home/Waterhub/Water";
 int led = D7;
 
 StaticJsonBuffer<200> jsonBuffer;
+
+int refreshRateinMinutes = 10;
 
 WiFiClient espClient;
 PubSubClient client(espClient);
 
 //SSID of your network
-char ssid[] = "Mainframe"; //SSID of your Wi-Fi router
-char pass[] = "Saanenland11"; //Password of your Wi-Fi router
+char ssid[] = "IS-Guests"; //SSID of your Wi-Fi router
+char pass[] = "work@isolBern"; //Password of your Wi-Fi router
 
 void setup()
 {
@@ -71,6 +73,18 @@ void append(char* s, char c) {
         s[len+1] = '\0';
 }
 
+void publish(int number) {
+  char data[] = "{ 'Humidity':";
+  char endData[] = "}";
+  char cstr[16];
+  itoa(number, cstr, 10);
+  char buff[70];
+  strcpy(buff, data);
+  strcat(buff, cstr);
+  strcat(buff, endData);
+  
+  client.publish(topicToPublish, buff, false);
+}
 
 void reconnect() {
  // Loop until we're reconnected
@@ -80,7 +94,7 @@ void reconnect() {
  if (client.connect("ESP8266 Client", username, password)) {
   Serial.println("connected");
   // ... and subscribe to topic
-  client.subscribe(topic);
+  client.subscribe(topicToSubscribe);
  } else {
   Serial.print("failed, rc=");
   Serial.print(client.state());
@@ -94,10 +108,18 @@ void reconnect() {
 
 void loop () 
 {
+  const unsigned long minutes = refreshRateinMinutes * 60 * 1000UL;
   if (!client.connected()) {
   reconnect();
  }
+ static unsigned long lastSampleTime = 0 - minutes;  // initialize such that a reading is due the first time through loop()
+ unsigned long now = millis();
+ if (now - lastSampleTime >= minutes)
+ {
+    lastSampleTime += minutes;
+    publish(lastSampleTime);
+    
+ }
  
- client.publish(topic, "", false);
  client.loop();
 }
