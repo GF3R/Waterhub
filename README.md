@@ -25,6 +25,6 @@ It is currently only communicating through a MQTT server which is hosted somewhe
 ## Plans
 
 #### Google home
-- [ ] An ability to start watering by telling google home
+- [ ] The ability to start watering by telling google home
 - [ ] Recieving the status through google home
 
