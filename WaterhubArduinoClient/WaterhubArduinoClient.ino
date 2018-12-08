@@ -18,8 +18,8 @@ WiFiClient espClient;
 PubSubClient client(espClient);
 
 //SSID of your network
-char ssid[] = "IS-Guests"; //SSID of your Wi-Fi router
-char pass[] = "work@isolBern"; //Password of your Wi-Fi router
+char ssid[] = ""; //SSID of your Wi-Fi router
+char pass[] = ""; //Password of your Wi-Fi router
 
 void setup()
 {
