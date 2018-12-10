@@ -18,13 +18,10 @@ WiFiClient espClient;
 PubSubClient client(espClient);
 
 //SSID of your network
-<<<<<<< HEAD
-char ssid[] = "Mainframe"; //SSID of your Wi-Fi router
-char pass[] = "Saanenland11"; //Password of your Wi-Fi router
-=======
+
 char ssid[] = ""; //SSID of your Wi-Fi router
 char pass[] = ""; //Password of your Wi-Fi router
->>>>>>> fb5d7540cdae9e45571145979d9bfae25633a2ea
+
 
 void setup()
 {
