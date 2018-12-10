@@ -8,20 +8,23 @@ It is currently only communicating through a MQTT server which is hosted somewhe
 ## Components
 
 
-#### Android Application
-* Trigger watering with the application
-* See status of plants (humidity)
-*   Monitor water status in water barrell
+#### [Android Application](https://github.com/GF3R/Waterhub/tree/master/WaterhubApp)
+- [x] Trigger watering with the application
+- [ ] See status of plants (humidity)
+- [ ] Monitor water status in water barrell
 	
-#### Arduino Client
-* Activate pump by mqtt subscription
-* Publish humidity to mqtt broker
+#### [Arduino Client](https://github.com/GF3R/Waterhub/tree/master/WaterhubArduinoClient)
+- [x] Activate pump by mqtt subscription
+- [ ] Publish humidity to mqtt broker
 
-#### Server
-* Montior plants and activate watering when needed
-* Inform user when water barell is near empty
+#### [Server](https://github.com/GF3R/Waterhub/tree/master/WaterhubServer)
+- [x] Subscripte to MQTT and update database
+- [ ] Montior plants and activate watering when needed
+- [ ] Inform user when water barell is near empty
+
+## Plans
 
 #### Google home
-* An ability to start watering by telling google home
-* Recieving the status through google home
+- [ ] The ability to start watering by telling google home
+- [ ] Recieving the status through google home
 
